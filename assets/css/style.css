@@ -6,6 +6,10 @@
     background-color: #676767;
 }
 
+.bg-color-three-reasons {
+    background-color: #fff;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -43,6 +47,24 @@ h4 {
 
 .inline-block {
     display: inline-block;
+}
+
+/* We do this so we can set its child columns as table cells i.e. let the element behave like a <table> element */
+.row-table {
+    display: table; 
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 /* ---------------- HEADING -- */
@@ -84,7 +106,7 @@ header {
 }
 
 /* this class is taken directly from the BS list-inline-item class. It was giving a margin-right value of .5rem
-We found it in inspect and copied the class here to directly overwrite it with our own value */
+We found it in dev tools and copied the class here to directly overwrite it with our own value */
 
 .list-inline-item:not(:last-child) {
     margin: 0;
@@ -93,7 +115,7 @@ We found it in inspect and copied the class here to directly overwrite it with o
 /* Matt refers to these next two as a "css hack" at 5:50 of the Adding The Menu Items video.
 menucontainer is a BS class which does something to solve a html whitespace issue (could we have added any container class???)
 But we dont want the font size of this class so we set it to 0 to take back control.
-Howvere, this means our text has no size now so we target the children list items (li) within the parent nav id (#) and give back a font size
+Howevre, this means our text has no size now so we target the children list items (li) within the parent nav id (#) and give back a font size
 (and a padding of 0 so we can gain full control over that too) */
 
 .menucontainer {
@@ -213,4 +235,3 @@ footer {
     padding: 20px;
 }
 
-/* */
